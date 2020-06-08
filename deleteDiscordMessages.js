@@ -111,8 +111,8 @@
      */
     async function deleteMessages(authToken, authorId, guildId, channelId, afterMessageId, beforeMessageId, content,hasLink, hasFile, includeNsfw, extLogger, stopHndl) {
         const start = new Date();
-        let deleteDelay = 100;
-        let searchDelay = 100;
+        let deleteDelay = 1000;
+        let searchDelay = 1000;
         let delCount = 0;
         let failCount = 0;
         let avgPing;
